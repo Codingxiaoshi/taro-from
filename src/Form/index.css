@@ -1,0 +1,76 @@
+.filed{
+  height: 42rpx;
+  padding: 20rpx;
+  padding-left: 40rpx;
+  font-weight: bold;
+  position: relative;
+}
+.filed::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 42rpx;
+    width: 5rpx;
+    background: #6190E8;
+    top: 20rpx;
+    left: 20rpx;
+    box-shadow: 0 0 5rpx #6190E8;
+}
+.from{
+  max-height: calc('100vh - 2.5vw - 76rpx - 150rpx');
+}
+
+.files{
+  height: 150rpx;
+  width: 100vw;
+}
+.b1{
+  border: 1rpx solid red;
+}
+.files-btn, .files-img{
+  box-sizing: border-box;
+  margin: 1rpx;
+}
+.files-btn, .files-img, .files-img_img{
+  width: 150rpx;
+  height: 150rpx;
+  display: inline-block;
+  position: relative;
+}
+.files-img_del{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 2rpx #000;
+  width: 30rpx;
+  height: 30rpx;
+  color: #eee;
+  z-index: 999;
+}
+.files-btn{
+  background: #fff;
+  position: relative;
+}
+.files-btn_x, .files-btn_y{
+  background: #999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.files-btn_x{
+  width: 60rpx;
+  height: 4rpx;
+  margin-top: -2rpx;
+  margin-left: -30rpx;
+}
+.files-btn_y{
+  width: 4rpx;
+  height: 60rpx;
+  margin-top: -30rpx;
+  margin-left: -2rpx;
+}
+
